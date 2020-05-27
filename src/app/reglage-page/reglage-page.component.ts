@@ -20,4 +20,8 @@ export class ReglagePageComponent implements OnInit {
     this.router.navigateByUrl('')
   }
 
+  goToProfil(){
+    this.router.navigateByUrl('profil')
+  }
+
 }
