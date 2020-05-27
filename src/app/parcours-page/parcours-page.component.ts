@@ -16,4 +16,8 @@ export class ParcoursPageComponent implements OnInit {
     this.router.navigateByUrl('')
   }
 
+  goToReglages(){
+    this.router.navigateByUrl('reglages')
+  }
+
 }

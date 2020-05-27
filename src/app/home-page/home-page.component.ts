@@ -17,4 +17,8 @@ export class HomePageComponent implements OnInit {
     this.router.navigateByUrl('parcours')
   }
 
+  goToReglages(){
+    this.router.navigateByUrl('reglages')
+  }
+
 }
