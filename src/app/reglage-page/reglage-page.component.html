@@ -1,0 +1,85 @@
+<ion-content>
+  
+  <h3 style="text-align: center; margin-top: 30px;">Réglages</h3>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <ion-row>
+        <p style="font-weight: bold; margin-left: 10px; font-size: 20px;">Notifications PUSH</p>
+        <ion-toggle style="margin-left: 120px;"></ion-toggle>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label> 
+        <ion-row>
+          <p style="font-weight: bold; margin-left: 10px; font-size: 20px;">HeartBeat</p>
+        <ion-toggle style="margin-left: 120px;"></ion-toggle>
+      </ion-row>
+    </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <p style="font-weight: bold; margin-left: 10px; font-size: 20px;">Sons de l'application</p>
+        <ion-toggle style="margin-left: 110px;"></ion-toggle>
+      </ion-row>
+    </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <p style="font-weight: bold; margin-left: 10px; font-size: 20px;">Géolocalisation</p>
+        <ion-toggle style="margin-left: 155px;"></ion-toggle>
+      </ion-row>
+    </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <p style="font-weight: bold; margin-left: 10px; font-size: 20px;">>Affichage satellite</p>
+        <ion-toggle style="margin-left: 130px;"></ion-toggle>
+      </ion-row>
+    </ion-label>
+    </ion-item>
+  </ion-list>
+  
+
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button >
+      <ion-label>Par défaut</ion-label>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-label>Bleu foncé</ion-label>
+    </ion-segment-button>
+    <ion-segment-button >
+      <ion-label>Noir</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <IonButton expand="block" color="primary">Se connecter avec Facebook</IonButton>
+
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="earth">
+      <ion-icon name="earth" (click)="goToHome()"></ion-icon>
+      <ion-label>Actualité</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="man">
+      <ion-icon name="man" (click)="goToParcours()"></ion-icon>
+      <ion-label>Parcours</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="settings">
+      <ion-icon name="settings"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
