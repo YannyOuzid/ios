@@ -10,6 +10,7 @@ import { RecherchePageComponent } from './recherche-page/recherche-page.componen
 import { ExploitPageComponent } from './exploit-page/exploit-page.component';
 import { ObjectifPageComponent } from './objectif-page/objectif-page.component';
 import { CreerPageComponent } from './creer-page/creer-page.component';
+import { TutorialPageComponent } from './tutorial-page/tutorial-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'exploit', component: ExploitPageComponent},
   {path: 'objectif', component: ObjectifPageComponent},
   {path: 'creer', component: CreerPageComponent},
+  {path: 'tutorial', component: TutorialPageComponent},
   {
     path: '',
     redirectTo: 'home',
