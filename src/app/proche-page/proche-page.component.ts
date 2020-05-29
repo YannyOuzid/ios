@@ -47,5 +47,9 @@ export class ProchePageComponent implements OnInit {
     this.router.navigateByUrl('profil')
   }
 
+  goToMap(){
+    this.router.navigateByUrl('map')
+  }
+
 
 }
