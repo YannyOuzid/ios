@@ -1,9 +1,62 @@
 <ion-content>
-  <div style="margin-left: 140px;">
+  <div style="margin-left: 140px; margin-top: 35px;">
     <ion-row>
       <h3 style="text-align: center;">Mon profil</h3>
       <ion-icon name="settings" style=" margin-left: 80px; margin-top: 20px;" (click)="goToReglages()"></ion-icon>
     </ion-row>
+  </div>
+
+
+  <svg height="100" width="100" style="margin-left: 140px;">
+    <circle cx="50" cy="50" r="40" stroke="cyan" stroke-width="3" fill="white"  />
+  </svg>
+
+  <div style="text-align: center;">
+    <p style="font-size: 25px;">Nom Prenom</p>
+  </div>
+
+  <hr style="border-width: 2px; margin-left: 40px; margin-right: 40px;">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        Abonnés
+      </ion-col>
+
+      <ion-col>
+        Distance Parcourus
+      </ion-col>
+
+      <ion-col>
+        Membre depuis
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
+  <div style="text-align: center;">
+    <ion-list>
+      <ion-item>
+        <ion-label><ion-icon name="trophy"></ion-icon>
+          <p style="font-size: 20px;">Palmarès</p></ion-label>
+      </ion-item>
+    </ion-list>
+    <p>Premier palmarès</p>
+    <p>Second palmarès</p>
+    <p>Troisième palmarès</p>
+  </div>
+
+  <div style="text-align: center;">
+    <ion-list>
+      <ion-item>
+        <ion-label><ion-icon name="star"></ion-icon>
+          <p style="font-size: 20px;">Exploits</p></ion-label>
+      </ion-item>
+    </ion-list>
+    <p>Premier exploit</p>
+    <p>Second exploit</p>
+    <p>Troisième exploit</p>
   </div>
 
 </ion-content>
