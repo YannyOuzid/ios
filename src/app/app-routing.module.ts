@@ -9,6 +9,7 @@ import { ProchePageComponent } from './proche-page/proche-page.component';
 import { RecherchePageComponent } from './recherche-page/recherche-page.component';
 import { ExploitPageComponent } from './exploit-page/exploit-page.component';
 import { ObjectifPageComponent } from './objectif-page/objectif-page.component';
+import { CreerPageComponent } from './creer-page/creer-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'recherche', component: RecherchePageComponent},
   {path: 'exploit', component: ExploitPageComponent},
   {path: 'objectif', component: ObjectifPageComponent},
+  {path: 'creer', component: CreerPageComponent},
   {
     path: '',
     redirectTo: 'home',
