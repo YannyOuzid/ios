@@ -28,6 +28,10 @@ export class ParcoursPageComponent implements OnInit {
     this.router.navigateByUrl('profil')
   }
 
+  goToParcours(){
+    this.router.navigateByUrl('parcours')
+  }
+
   goToMap(){
     this.router.navigateByUrl('map')
   }
