@@ -16,6 +16,10 @@ export class ProfilPageComponent implements OnInit {
     this.router.navigateByUrl('')
   }
 
+  goToExploit(){
+    this.router.navigateByUrl('exploit')
+  }
+
   goToReglages(){
     this.router.navigateByUrl('reglages')
   }

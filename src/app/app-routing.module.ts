@@ -7,6 +7,8 @@ import { ProfilPageComponent } from './profil-page/profil-page.component';
 import { MapPageComponent } from './map-page/map-page.component';
 import { ProchePageComponent } from './proche-page/proche-page.component';
 import { RecherchePageComponent } from './recherche-page/recherche-page.component';
+import { ExploitPageComponent } from './exploit-page/exploit-page.component';
+import { ObjectifPageComponent } from './objectif-page/objectif-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'map', component: MapPageComponent},
   {path: 'proche', component: ProchePageComponent},
   {path: 'recherche', component: RecherchePageComponent},
+  {path: 'exploit', component: ExploitPageComponent},
+  {path: 'objectif', component: ObjectifPageComponent},
   {
     path: '',
     redirectTo: 'home',
