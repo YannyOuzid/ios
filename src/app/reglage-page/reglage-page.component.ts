@@ -24,4 +24,8 @@ export class ReglagePageComponent implements OnInit {
     this.router.navigateByUrl('profil')
   }
 
+  goToTuto(){
+    this.router.navigateByUrl('tutorial')
+  }
+
 }
