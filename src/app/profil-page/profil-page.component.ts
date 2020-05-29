@@ -33,8 +33,5 @@ export class ProfilPageComponent implements OnInit {
     this.router.navigateByUrl('profil')
   }
 
-  goToObjectif(){
-    this.router.navigateByUrl('objectif')
-  }
 
 }
