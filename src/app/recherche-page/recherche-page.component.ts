@@ -24,4 +24,8 @@ export class RecherchePageComponent implements OnInit {
     this.router.navigateByUrl('profil')
   }
 
+  goToReglages(){
+    this.router.navigateByUrl('reglages')
+  }
+
 }
