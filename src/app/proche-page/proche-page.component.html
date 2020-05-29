@@ -70,3 +70,24 @@
   </ion-list>
 
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="earth">
+      <ion-icon name="earth" (click)="goToHome()"></ion-icon>
+      <ion-label>Actualité</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="man">
+      <ion-icon name="man" (click)="goToParcours()"></ion-icon>
+      <ion-label>Parcours</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="settings">
+      <ion-icon name="settings" (click)="goToProfil()"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>

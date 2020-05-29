@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewChild, ElementRef } from "@angular/core";
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { Router } from '@angular/router';
 
 declare var google:any;
 
@@ -16,7 +17,7 @@ export class ProchePageComponent implements OnInit {
 
   @ViewChild('map', {read: ElementRef, static: false}) mapRef: ElementRef;
 
-  constructor() {}
+  constructor(public router : Router) { }
 
   ionViewDidEnter() {
     this.showMap();
@@ -33,5 +34,18 @@ export class ProchePageComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  goToParcours(){
+    this.router.navigateByUrl('parcours')
+  }
+
+  goToHome(){
+    this.router.navigateByUrl('')
+  }
+
+  goToProfil(){
+    this.router.navigateByUrl('profil')
+  }
+
 
 }

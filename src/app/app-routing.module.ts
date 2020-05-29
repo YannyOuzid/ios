@@ -6,6 +6,7 @@ import { ReglagePageComponent } from './reglage-page/reglage-page.component';
 import { ProfilPageComponent } from './profil-page/profil-page.component';
 import { MapPageComponent } from './map-page/map-page.component';
 import { ProchePageComponent } from './proche-page/proche-page.component';
+import { RecherchePageComponent } from './recherche-page/recherche-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'profil', component: ProfilPageComponent},
   {path: 'map', component: MapPageComponent},
   {path: 'proche', component: ProchePageComponent},
+  {path: 'recherche', component: RecherchePageComponent},
   {
     path: '',
     redirectTo: 'home',
