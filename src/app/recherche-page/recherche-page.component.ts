@@ -28,4 +28,8 @@ export class RecherchePageComponent implements OnInit {
     this.router.navigateByUrl('reglages')
   }
 
+  goToProche(){
+    this.router.navigateByUrl('proche')
+  }
+
 }
