@@ -1,14 +1,83 @@
-
-<p>
-  objectif-page works!
-</p>
-
-<ion-content>
-
-  <div style="margin-left: 140px;">
+<div style="margin-left: 140px;">
     <ion-row>
       <h3 style="text-align: center;">Objectif</h3>
-      <ion-icon name="settings" style=" margin-left: 80px; margin-top: 20px;" (click)="goToReglages()"></ion-icon>
+     
     </ion-row>
-  </div>
+</div>
+
+<h4 style="text-align: center;">Personnalisés</h4>
+
+<ion-content>
+  <div>
+    <ion-row>
+      <ion-icon name="stopwatch" style="margin-top: 20px; margin-left: 30px;"></ion-icon>
+   <h5 style="margin-left: 20px;">Faire moins de 45 minutes</h5>
+  </ion-row>
+  <ion-row>
+    <ion-icon name="stats-chart-outline" style="margin-top: 20px; margin-left: 30px;"></ion-icon>
+   <h5 style="margin-left: 20px;">Maintenir une moyenne de 12 km/h</h5>
+  </ion-row>
+  <ion-row>
+    <ion-icon name="gift" style="margin-top: 20px; margin-left: 30px;"></ion-icon>
+   <h5 style="margin-left: 20px;">-6% chez le partenaire</h5>
+  </ion-row>
+</div>
+
+<ion-list>
+  <ion-item></ion-item>
+</ion-list>
+
+<div>
+<h4 style="text-align: center;">Basés sur les performances globales</h4>
+<ion-row>
+  <ion-icon name="stopwatch" style="margin-top: 20px; margin-left: 30px;"></ion-icon>
+<h5 style="margin-left: 20px;">Faire moins de 45 minutes</h5>
+</ion-row>
+<ion-row>
+  <ion-icon name="stats-chart-outline" style="margin-top: 20px; margin-left: 29px;"></ion-icon>
+<h5 style="margin-left: 20px;">Maintenir une moyenne de 14 km/h</h5>
+</ion-row>
+<ion-row>
+  <ion-icon name="walk" style="margin-top: 20px; margin-left: 26px;"></ion-icon>
+<h5 style="margin-left: 20px;">Battre le temps d'au moins 1 ami(e)</h5>
+</ion-row>
+<ion-row>
+  <ion-icon name="gift" style="margin-top: 20px; margin-left: 26px;"></ion-icon>
+ <h5 style="margin-left: 20px;">-14% chez le partenaire</h5>
+</ion-row>
+</div>
+
+<ion-list>
+  <ion-item></ion-item>
+</ion-list>
+
+<div>
+  <h4 style="margin-left: 25px;">Partenaire du jour :</h4>
+  
+</div>
+
+
+
+
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="earth">
+      <ion-icon name="earth"></ion-icon>
+      <ion-label>Actualité</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="parcours">
+      <ion-icon name="compass-outline" (click)="goToParcours()"></ion-icon>
+      <ion-label>Parcours</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profil">
+      <ion-icon name="person-outline" (click)="goToProfil()"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>

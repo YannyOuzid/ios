@@ -22,3 +22,4 @@ describe('ObjectifPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

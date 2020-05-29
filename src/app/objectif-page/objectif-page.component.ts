@@ -12,3 +12,4 @@ export class ObjectifPageComponent implements OnInit {
   ngOnInit() {}
 
 }
+
