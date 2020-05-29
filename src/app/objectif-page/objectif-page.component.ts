@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-objectif-page',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObjectifPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router : Router) { }
 
   ngOnInit() {}
+
+  goToParcours(){
+    this.router.navigateByUrl('parcours')
+  }
+
+  goToHome(){
+    this.router.navigateByUrl('')
+  }
+
+  goToProfil(){
+    this.router.navigateByUrl('profil')
+  }
 
 }
 
