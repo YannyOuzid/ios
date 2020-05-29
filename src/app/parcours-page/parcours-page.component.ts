@@ -36,6 +36,10 @@ export class ParcoursPageComponent implements OnInit {
     this.router.navigateByUrl('map')
   }
 
+  goToCreer(){
+    this.router.navigateByUrl('creer')
+  }
+
   goToProche(){
     this.router.navigateByUrl('proche')
   }
