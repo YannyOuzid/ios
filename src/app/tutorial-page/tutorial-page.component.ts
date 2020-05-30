@@ -6,17 +6,13 @@ import {Component, OnInit} from '@angular/core';
     <ion-content>
       <ion-slides pager="false" [options]="slideOpts">
         <ion-slide>
-          <h1>Slide 1</h1>
-          <ion-card>
-            <h2>Hello guys</h2>
-          </ion-card>
-          
+          <ion-img src="../assets/slide1.png"></ion-img>           
         </ion-slide>
         <ion-slide>
-          <h1>Slide 2</h1>
+          <ion-img src="../assets/slide2.png"></ion-img>
         </ion-slide>
         <ion-slide>
-          <h1>Slide 3</h1>
+          <ion-img src="../assets/slide3.png"></ion-img>
         </ion-slide>
       </ion-slides>
     </ion-content>
@@ -26,7 +22,7 @@ export class TutorialPageComponent implements OnInit {
     // Optional parameters to pass to the swiper instance.
     // See http://idangero.us/swiper/api/ for valid options.
     slideOpts = {
-      initialSlide: 1,
+      initialSlide: 0,
       speed: 400
     };
   constructor() {}
