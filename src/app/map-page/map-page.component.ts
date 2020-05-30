@@ -26,7 +26,7 @@ export class MapPageComponent implements OnInit {
     const location = new google.maps.LatLng(48.8464, 2.3481);
     const options = {
       center: location,
-      zoom: 10,
+      zoom: 15,
       disableDefaultUI: false
     }
     this.map = new google.maps.Map(this.mapRef.nativeElement, options);

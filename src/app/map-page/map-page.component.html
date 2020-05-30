@@ -10,18 +10,25 @@
 <!-- Header de la page : Fin -->
 <!-- Contenu de la page : Début -->
 <ion-content [fullscreen]="true">
-  <!-- Map : Witdh = 100%, Height : 350px (Voir le fichier SCSS) -->
-  <div #map id="google-map"></div>
-</ion-content>
-<!-- Contenu de la page : Fin -->
-<!-- Navigation de l'application : Début -->
-<ion-tabs>
+  <!-- fab placed to the top end -->
+  <ion-fab vertical="top" horizontal="start" slot="fixed" style="margin-top: 100px;">
+    <ion-fab-button style="width: 100px;">
+      <p>00h 42mn 36s</p>
+    </ion-fab-button>
+  </ion-fab>
   <!-- fab placed to the top end -->
   <ion-fab vertical="top" horizontal="end" slot="fixed" style="margin-top:100px">
     <ion-fab-button>
       <ion-icon name="ribbon-outline" (click)="goToObjectif()"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+  <!-- Map : Witdh = 100%, Height : 350px (Voir le fichier SCSS) -->
+  <div #map id="google-map"></div>
+</ion-content>
+<!-- Contenu de la page : Fin -->
+<!-- Navigation de l'application : Début -->
+<ion-tabs>
+
   <ion-tab-bar slot="bottom">
     <!-- Onglet : Actualité : Début -->
     <ion-tab-button tab="earth">

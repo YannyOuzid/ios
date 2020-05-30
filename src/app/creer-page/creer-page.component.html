@@ -1,3 +1,75 @@
-<p>
-  creer-page works!
-</p>
+<!-- Creer-page-composant : Début -->
+<!-- Header de la page : Début -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Nouveau parcours
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- Header de la page : Fin -->
+<!-- Contenu de la page : Début -->
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Nom du parcours</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <!-- Map : Witdh = 100%, Height : 350px (Voir le fichier SCSS) -->
+  <div #map id="google-map"></div>
+
+  <ion-item>
+    <ion-label>Enregistrer le parcours</ion-label>
+    <ion-select placeholder="Choisir...">
+      <ion-select-option value="f">Dès maintenant</ion-select-option>
+      <ion-select-option value="m">Dans 100m</ion-select-option>
+      <ion-select-option value="d">Dans 500m</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Objectifs personnalisés</ion-label>
+    <ion-select placeholder="Choisir...">
+      <ion-select-option value="f">Oui</ion-select-option>
+      <ion-select-option value="m">Non</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Partager le parcours</ion-label>
+    <ion-select placeholder="Choisir...">
+      <ion-select-option value="f">Oui</ion-select-option>
+      <ion-select-option value="m">Non</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button expand="full" style="margin-top: 30px;">Lancer le parcours</ion-button>
+
+</ion-content>
+<!-- Contenu de la page : Fin -->
+<!-- Navigation de l'application : Début -->
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <!-- Onglet : Actualité : Début -->
+    <ion-tab-button tab="earth">
+      <ion-icon name="earth" (click)="goToHome()"></ion-icon>
+      <ion-label>Actualité</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+    <!-- Onglet : Actualité : Fin -->
+    <!-- Onglet : Parcours : Début -->
+    <ion-tab-button tab="compass-outline">
+      <ion-icon name="compass-outline" (click)="goToParcours()"></ion-icon>
+      <ion-label>Parcours</ion-label>
+    </ion-tab-button>
+    <!-- Onglet : Parcours : Fin -->
+    <!-- Onglet : Profil : Début -->
+    <ion-tab-button tab="settings">
+      <ion-icon name="person-outline" (click)="goToProfil()"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+    <!-- Onglet : Profil : Fin -->
+  </ion-tab-bar>
+</ion-tabs>
+<!-- Navigation de l'application : Fin -->
+<!-- Creer-page-composant : Fin -->
