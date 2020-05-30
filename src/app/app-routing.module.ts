@@ -29,6 +29,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'second',
+    loadChildren: () => import('./modal/second/second.module').then( m => m.SecondPageModule)
+  },
+  {
+    path: 'success',
+    loadChildren: () => import('./modal/exploits/success/success.module').then( m => m.SuccessPageModule)
+  },
+  {
+    path: 'not',
+    loadChildren: () => import('./modal/exploits/not/not.module').then( m => m.NotPageModule)
+  },
 ];
 
 @NgModule({

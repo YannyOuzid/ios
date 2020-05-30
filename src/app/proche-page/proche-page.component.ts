@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ViewChild, ElementRef } from "@angular/core";
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { SecondPage } from '../modal/second/second.page';
+
 
 declare var google:any;
 
@@ -17,7 +20,7 @@ export class ProchePageComponent implements OnInit {
 
   @ViewChild('map', {read: ElementRef, static: false}) mapRef: ElementRef;
 
-  constructor(public router : Router) { }
+  constructor(public router : Router, public modalController: ModalController) { }
 
   ionViewDidEnter() {
     this.showMap();
@@ -49,6 +52,14 @@ export class ProchePageComponent implements OnInit {
 
   goToMap(){
     this.router.navigateByUrl('map')
+  }
+
+  async clickModal() {
+    const modal = await this.modalController.create({
+      component: SecondPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
   }
 
 
