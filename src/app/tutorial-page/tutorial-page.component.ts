@@ -3,6 +3,18 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'slides-example',
   template: `
+      <ion-header [translucent]="true">
+          <ion-toolbar>
+              <ion-buttons slot="start" style="z-index: 1009;">
+                  <ion-back-button></ion-back-button>
+              </ion-buttons>
+
+              <ion-title>
+                  Tutoriel
+              </ion-title>
+
+          </ion-toolbar>
+      </ion-header>
     <ion-content>
       <ion-slides pager="false" [options]="slideOpts">
         <ion-slide>
