@@ -1,11 +1,21 @@
-<ion-content>
-  <div style="margin-left: 140px; margin-top: 35px;">
-    <ion-row>
-      <h3 style="text-align: center;">Mon profil</h3>
-      <ion-icon name="settings" style=" margin-left: 80px; margin-top: 20px;" (click)="goToReglages()"></ion-icon>
-    </ion-row>
-  </div>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" style="z-index: 1000;">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
 
+    <ion-title>
+      Mon profil
+    </ion-title>
+
+    <ion-buttons slot="end" style="z-index: 101;">
+      <ion-icon name="settings" (click)="goToReglages()"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
 
   <svg height="100" width="100" style="margin-left: 140px;">
     <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="white"  />
