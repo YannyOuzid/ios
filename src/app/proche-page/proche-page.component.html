@@ -1,18 +1,20 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
 
-      <ion-buttons slot="start" style="z-index: 1099;">
+      <ion-buttons slot="start" style="z-index: 105;">
         <ion-back-button></ion-back-button>
       </ion-buttons>
 
       <ion-title>
-        Run'hour
+        Parcours proche
       </ion-title>
 
-
+      <ion-buttons slot="end" style="z-index: 103;">
+        <ion-icon name="settings" (click)="goToReglages()"></ion-icon>
+      </ion-buttons>
 
     </ion-toolbar>
-  </ion-header>
+</ion-header>
 
 
 <ion-content [fullscreen]="true">

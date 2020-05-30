@@ -54,6 +54,10 @@ export class ProchePageComponent implements OnInit {
     this.router.navigateByUrl('map')
   }
 
+  goToReglages(){
+    this.router.navigateByUrl('reglages')
+  }
+
   async clickModal() {
     const modal = await this.modalController.create({
       component: SecondPage,

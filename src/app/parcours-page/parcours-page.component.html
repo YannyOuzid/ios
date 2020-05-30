@@ -1,13 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-title>
+      Parcours
+    </ion-title>
+
+    <ion-buttons slot="end" style="z-index: 103;">
+      <ion-icon name="settings" (click)="goToReglages()"></ion-icon>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
-
-  <div style="margin-left: 140px;">
-    <ion-row>
-      <h3 style="text-align: center;">Parcours</h3>
-      <ion-icon name="settings" style=" margin-left: 80px; margin-top: 20px;" (click)="goToReglages()"></ion-icon>
-    </ion-row>
-  </div>
-
 
   <ion-button expand="block" color="dark" style="margin-top: 100px;" (click)="goToRecherche()">Rechercher un parcours</ion-button>
 

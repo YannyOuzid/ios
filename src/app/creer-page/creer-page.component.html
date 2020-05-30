@@ -2,9 +2,18 @@
 <!-- Header de la page : Début -->
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start" style="z-index: 1000;">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
     <ion-title>
       Nouveau parcours
     </ion-title>
+
+    <ion-buttons slot="end" style="z-index: 101;">
+      <ion-icon name="settings" (click)="goToReglages()"></ion-icon>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 <!-- Header de la page : Fin -->
