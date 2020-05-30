@@ -50,6 +50,10 @@ export class MapPageComponent implements OnInit {
     this.router.navigateByUrl('map')
   }
 
+  goToReglages(){
+    this.router.navigateByUrl('reglages')
+  }
+
   goToObjectif(){
     this.router.navigateByUrl('objectif')
   }
