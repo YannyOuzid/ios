@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'slides-example',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
       <ion-slides pager="false" [options]="slideOpts">
         <ion-slide>
           <h1>Slide 1</h1>
+          <ion-card>
+            <h2>Hello guys</h2>
+          </ion-card>
           
         </ion-slide>
         <ion-slide>
@@ -19,17 +22,13 @@ import { Component } from '@angular/core';
     </ion-content>
   `
 })
-export class TutorialPageComponent {
-
+export class TutorialPageComponent implements OnInit {
+    // Optional parameters to pass to the swiper instance.
+    // See http://idangero.us/swiper/api/ for valid options.
+    slideOpts = {
+      initialSlide: 1,
+      speed: 400
+    };
   constructor() {}
   ngOnInit() {}
-}
-export class SlideExample {
-  // Optional parameters to pass to the swiper instance.
-  // See http://idangero.us/swiper/api/ for valid options.
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400
-  };
-  constructor() {}
 }
