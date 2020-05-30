@@ -1,10 +1,16 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Run'hour
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
+
+    <ion-toolbar>
+      <ion-buttons slot="start" style="z-index: 1099;">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Run'hour
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
 
 <ion-content [fullscreen]="true">
   <!-- Map : Witdh = 100%, Height : 350px (Voir le fichier SCSS) -->
@@ -35,7 +41,6 @@
     <ion-label>Top 10</ion-label>
     <ion-button (click)="clickModal()">Voir</ion-button>
   </ion-list-header>
-  
 
 </ion-content>
 
